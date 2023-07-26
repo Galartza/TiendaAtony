@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
 :root {
     --blanco: #f6fff8;
     --gris: #d3d3d3;
+    --grisOscuro: #333533; 
     --negro: #080708;
 }
 
@@ -12,6 +15,7 @@
 
 body {
     background-color: var(---blanco);
+    font-family: 'Oxygen', sans-serif;
 }
 
 .header {
@@ -55,19 +59,26 @@ body {
 
 /* ------- inicio section ------- */
 #inicio{
-    height: 50rem;
+    height: 45rem;
     width: 100%;
     background-image: url(../assets/fondo-inicio.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    border-radius: 5px;
 }
+.container{
+    padding: 1rem;
+    border-radius: 5px;
 
+}
 .container-inicio {
-    height: 50rem;
+    height: 45rem;
     width: 100%;
     background-color: rgba(8, 7, 8, 0.75);
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px rgba(8, 7, 8, 0.75);
 }
 
 .logo__container-inicio{
@@ -78,18 +89,18 @@ body {
 
 /* ------- shop section ------- */
 #shop {
-    height: 40rem;
+    height: 100rem;
     width: 100%;
 }
 
 .container-shop{
-    height: 40rem;
+    height: 95rem;
     width: 100%;
-    padding: 2rem;
+    padding: 5rem 2rem;
     display: grid;
     justify-content: space-around;
     grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .tilte-shop{
@@ -114,8 +125,53 @@ body {
 }
 
 .nombre__products {
-    font-size: 1.2rem;
+    font-size: .8rem;
     text-align: center;
-    font-weight: 100;
+    font-weight: lighter;
     padding: 1rem 0;
+    color: var(--grisOscuro);
+    text-transform: uppercase;
+}
+
+.btn-products {
+    margin: auto;
+    width: 10rem;
+    font-size: 1.2rem;
+    padding: 2px;
+    border: solid 1px var(--negro);
+    background-color: var(--blanco);
+    cursor: pointer;
+    border-radius: 2px;
+}
+/* ------ section contacto ------- */
+#contacto{
+    height: 30rem;
+    width: 100%;
+    background-color: var(--negro);
+}
+
+.container-contacto {
+    height: 30rem;
+    width: 100%;
+}
+
+.logo-contacto{
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+}
+
+.item-contacto{
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin-top: -2rem;
+    color: var(--blanco);
+}
+
+.item-descripcion{
+    font-size: 1rem;
+    list-style: none;
+    padding: 0 1.2rem;
 }
