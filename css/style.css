@@ -23,7 +23,7 @@ body {
     height: 4rem;
     background-color: var(--blanco);
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     padding: 0 2rem;
     box-shadow: 0px 0px 5px rgba(8, 7, 8, 0.75);
@@ -47,16 +47,48 @@ body {
     justify-content: center;
     align-items: center;
     list-style: none;
-    padding: 0 10rem 0 0;
+    padding: 0 0 0 5rem;
 }
 
 .nav-link {
-    font-size: 1.5rem;
-    color: var(---blanco);
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--negro);
     text-decoration: none;
     padding: 0 1.5rem;
 }
-
+.nav-link:hover {
+    background-color: var(--negro);
+    color: var(--blanco);
+    padding: 1.5rem;
+    transition: all 0.3s;
+}
+.serch-btn {
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+.input-src {
+    width: 100%;
+    padding: .5rem;
+    border: 1px solid var(--gris);
+    border-radius: 5px;
+}
+.icon-src{
+    position: absolute;
+    right: 0;
+    width: 5%;
+}
+.icon {
+    color: var(--gris);
+}
+/* .btn-shopping {
+    height: 1rem;
+    border: none;
+    margin: .5rem;
+    cursor: pointer;
+} */
 /* ------- inicio section ------- */
 #inicio{
     height: 45rem;
@@ -153,7 +185,7 @@ body {
 }
 /* ------ section contacto ------- */
 #contacto{
-    height: 25.5rem;
+    height: 26rem;
     width: 100%;
     background-color: var(--negro);
 }
