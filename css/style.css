@@ -73,18 +73,17 @@ body {
 #inicio {
     height: 45rem;
     width: 100%;
-    background-image: url(../assets/fondo-inicio.jpg);
+    background-image: url(../assets/fondo-inicio.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    border-radius: 5px;
     overflow: hidden;
 }
 .container-inicio {
     height: 45rem;
     width: 100%;
-    background-color: rgba(8, 7, 8, 0.85);
+    background-color: rgba(8, 7, 8, 0.45);
     border-radius: 5px;
     box-shadow: 1px 1px 10px rgba(8, 7, 8, 0.75);
 }
