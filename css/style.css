@@ -73,7 +73,7 @@ body {
 #inicio {
     height: 45rem;
     width: 100%;
-    background-image: url(../assets/fondo-inicio.png);
+    background-image: url(../assets/fondo-inicio.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -176,13 +176,15 @@ body {
     justify-content: center;
     background-color: var(--gris);
 }
-
+.products:hover {
+    transition: all 0.2s ease 0s;
+    transform: scale(1.04);
+}
 .container-products {
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
     cursor: pointer;
     border: .1px solid var(--gris);
 }
-
 .product__imagen {
     height: 20rem;
     width: 100%;
@@ -231,7 +233,7 @@ body {
 
 .hover-underline-animation {
     position: relative;
-    color: black;
+    color: var(--negro);
     padding-bottom: 20px;
 }
 
@@ -243,7 +245,7 @@ body {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #000000;
+    background-color: var(--negro);
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
@@ -300,7 +302,7 @@ body {
 
     .banner-title {
         font-size: 2rem;
-        color: red;
+        color: var(--blanco);
         margin: auto;
     }
 }
@@ -449,10 +451,10 @@ body {
 
 .fancy {
     background-color: transparent;
-    border: 2px solid #000;
+    border: 2px solid var(--negro);
     border-radius: 0;
     box-sizing: border-box;
-    color: #fff;
+    color: var(--blanco);
     cursor: pointer;
     display: inline-block;
     font-weight: 700;
@@ -474,7 +476,7 @@ body {
     content: " ";
     width: 1.5625rem;
     height: 2px;
-    background: black;
+    background: var(--negro);
     top: 50%;
     left: 1.5em;
     position: absolute;
@@ -492,7 +494,7 @@ body {
     transition: all 0.3s ease-in-out;
     text-transform: uppercase;
     text-decoration: none;
-    color: black;
+    color: var(--negro);
 }
 
 .fancy .top-key {
@@ -526,17 +528,17 @@ body {
 }
 
 .fancy:hover {
-    color: white;
-    background: black;
+    color: var(--blanco);
+    background: var(--negro);
 }
 
 .fancy:hover::before {
     width: 0.9375rem;
-    background: white;
+    background: var(--blanco);
 }
 
 .fancy:hover .text {
-    color: white;
+    color: var(--blanco);
     padding-left: 1.5em;
 }
 
